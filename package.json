@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && mv ./public/index.html ./resources/views/app.blade.php && cp ./publicl/*.* ./public && cp ./publicl/.htaccess ./public",
+    "prod": "ng build --prod && mv ./public/index.html ./resources/views/app.blade.php && cp ./publicl/*.* ./public && cp ./publicl/.htaccess ./public",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
